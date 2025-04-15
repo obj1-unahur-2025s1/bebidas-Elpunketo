@@ -1,0 +1,23 @@
+import bebidas.*
+import tito.*
+describe "casos de prueba Tito"{
+
+  test "prueba cianuro en tito" {
+    //assert.equals(100, pepita.energy())
+    //assert.notThat()
+    //assert.that()
+    tito.consumir(5,cianuro)
+    assert.equals(0, tito.velocidad())
+    assert.equals(cianuro, tito.bebida())
+  }
+  test "prueba terere en tito" {
+    tito.consumir(5,terere)
+    assert.equals(7, tito.velocidad())
+    assert.equals(terere, tito.bebida())
+  }
+    test "prueba whisky" {
+    tito.consumir(5,whisky)
+    assert.equals(4.13343, tito.velocidad())
+    assert.equals(whisky, tito.bebida())
+  }
+}
